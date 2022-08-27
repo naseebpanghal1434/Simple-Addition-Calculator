@@ -25,12 +25,23 @@
             <p><label for="secondNum">Enter Second Number: </label>
                 <input type="number" name="secondNumber" id="secondNum">
             </p>
-            <p class="operations">Choose Operations: 
+
+            <!-- Individual Operation Buttons -->
+            <!-- <p class="operations">Choose Operations: 
             <button onclick="addNumbers()">Add</button>
             <button onclick="subNumbers()">Sub</button>
             <button onclick="mulNumbers()">Mul</button>
             <button onclick="divNumbers()">Div</button>
-            </p>
+            </p> -->
+
+            <P>Choose Operation: 
+            <select name="forOperations" id="forOperationsId" onchange="doOp()">
+                <option selected value="null">Select...</option>
+                <option value="add">+</option>
+                <option value="sub" >-</option>
+                <option value="mul">*</option>
+                <option value="div">/</option>
+            </select></P>
 
             <p> <label for="showResult">Result: </label>
                 <input type="text" name="showResult" id="showResult">
@@ -40,9 +51,6 @@
             <button onclick="changeBackground()" class="changeBg">Change Background</button>
         </div>
         </section>
-        <!-- <section class="darkBg">
-            <button onclick="changeBackground()">Change Background</button>
-        </section> -->
     </main>
 </body>
 
